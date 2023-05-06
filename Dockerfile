@@ -1,5 +1,7 @@
 # Base image
 FROM golang:1.20
+RUN apt-get -y update
+RUN apt-get install -y ffmpeg
 
 # Set working directory
 WORKDIR /app
